@@ -1,0 +1,58 @@
+@import "../variables.scss";
+@import "./table-popup.scss";
+
+.checks-tab {
+  pagination-block + table {
+    margin-top: 30px;
+  }
+
+  .number-column {
+    width: 47px;
+  }
+
+  .code-column {
+    width: 100px;
+  }
+
+  .document-column {
+    width: 150px;
+  }
+
+  .amount-column {
+    width: 8.988%;
+  }
+
+  .date-column {
+    width: 125px;
+  }
+
+  .status-column {
+    width: 100px;
+  }
+
+  operation-status {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      margin-right: 11px;
+      border-radius: 50%;
+    }
+
+    &.orange::before {
+      background-color: #ffc875;
+    }
+
+    &.green::before {
+      background-color: $color-green-light;
+    }
+
+    &.red::before {
+      background-color: $color-pink;
+    }
+  }
+}

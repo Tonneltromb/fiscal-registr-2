@@ -1,0 +1,35 @@
+switches-container {
+  display: block;
+}
+
+switches-content {
+  display: block;
+}
+
+switches-content > aside > label,
+switches-content > section > label {
+  display: block;
+  cursor: pointer;
+}
+
+switches-content > section {
+  & > input {
+    //display: none;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+
+    &:checked + switchable-block {
+      display: block;
+    }
+  }
+
+  & > label {
+    display: none;
+  }
+}
+
+switchable-block {
+  display: none;
+  width: 100%;
+}

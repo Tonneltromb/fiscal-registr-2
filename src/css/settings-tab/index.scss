@@ -1,0 +1,9 @@
+@import "../variables.scss";
+@import "./table-settings.scss";
+@import "./table-terminals.scss";
+
+.settings-tab {
+  table-setting + table {
+    margin-top: 25px;
+  }
+}

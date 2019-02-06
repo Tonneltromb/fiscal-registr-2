@@ -1,0 +1,58 @@
+.checks-tab .table-popup {
+	padding-bottom: 10px;
+
+	table {
+		width: 100%;
+	}
+
+	tr {
+		display: flex;
+		padding: 10px 30px;
+		justify-content: space-between;
+
+		&:not(:first-child) {
+			border-top: 1px solid #e2e3e1;
+			border-left: 1px solid #e2e3e1;
+			border-right: 1px solid #e2e3e1;
+		}
+
+		&:last-child{
+			border-bottom: 1px solid #e2e3e1;
+		}
+	}
+
+	td, th {
+		font-size: 13px;
+		line-height: 18px;
+	}
+
+
+	th {
+		font-weight: 700;
+		color: #a7a7a7;
+		text-align: left;
+	}
+
+	td {
+		font-weight: 300;
+		color: black;
+	}
+
+	.name-column {
+		width: 37%;
+	}
+
+	.price-column {
+		width: 9%;
+
+	}
+
+	.amount-column{
+		width: 90px;
+	}
+
+	.measure-column {
+		width: 90px;
+
+	}
+}

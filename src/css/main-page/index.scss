@@ -1,0 +1,66 @@
+@import "../variables.scss";
+
+switches-content {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #f5f6f3;
+
+	& > * {
+		padding-left: 76px;
+		padding-right: 76px;
+	}
+}
+
+switches-content > aside {
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+
+	&::before {
+		content: 'Фискальный регистратор';
+		display: block;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 31px;
+		color: #000;
+		margin-right: auto;
+	}
+
+	& > label {
+		font-size: 13px;
+		font-weight: 700;
+		line-height: 18px;
+		letter-spacing: .05em;
+		text-transform: uppercase;
+		color: rgba(79, 79, 79, .5);
+		transition: .3s;
+		padding: 28px 0 23px;
+		border-bottom: 3px solid transparent;
+
+		&.active {
+			color: #4f4f4f;
+			border-color: #3ac162;
+		}
+
+		&:hover {
+			color: #000;
+		}
+
+		& + label {
+			margin-left: 36px;
+		}
+	}
+}
+
+switches-content > section {
+	display: flex;
+	flex: 1 0 auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+
+
+

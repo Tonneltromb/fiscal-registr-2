@@ -1,0 +1,42 @@
+.settings-tab table {
+	width: 100%;
+
+	tr {
+		display: flex;
+		position: relative;
+		padding: 10px 40px 10px 16px;
+		background-color: #fff;
+		border: 1px solid #e2e3e1;
+
+		&:not(:last-child) {
+			border-bottom: none;
+		}
+	}
+
+	th,
+	td {
+		display: block;
+		font-size: 16px;
+		line-height: 18px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+
+		&:nth-child(1) {
+			width: 20%;
+		}
+
+		&:nth-child(2) {
+			width: 20%;
+		}
+
+		&:nth-child(3) {
+			width: 40%;
+		}
+	}
+
+	th {
+		font-weight: 700;
+		color: #a7a7a7;
+	}
+}
